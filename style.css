@@ -46,6 +46,7 @@
     width: 100%;
     height: 100vh;
     display: flex;
+    background: linear-gradient(to right, #fb509d(219,146,9),#f4adcd(196,159,88),white(195,150,85));
 
 }
 .box1{
