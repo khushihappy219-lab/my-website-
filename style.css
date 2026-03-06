@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* .navbar1{
+    margin-left: 100%;
+} */
 #navbar{
     width:100% ;
     height: auto;
@@ -11,14 +14,16 @@
     align-items: center;
     padding: 0% 10px;
     color: white;
-    background-color: white;
+    background-color:#fb7fb7;
+    position: fixed;
+    
 }
 #navbar nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
     
-    gap: 80px;
+    gap: 50px;
     
     list-style: none;
     
@@ -90,7 +95,7 @@
  .box1 button:hover{
    
     background-color:#970245 ;
-    transform: scale(1.1); */
+    transform: scale(1.1);
  }
  #secondpage{
     width: 100%;
@@ -199,7 +204,7 @@
  }
  .box5a{
     width: 100%;
-    height: 50px;
+    height: auto;
     color: black;
     background-color: #f3569d;
     
@@ -208,7 +213,7 @@
  }
  .box6{
     width: 95%;
-    height: 50vh;
+    height: auto;
     border: 2px solid #e3cbcb;
     background-color: #e3cbcb;
     background-image: url(img-2.png);
@@ -222,7 +227,7 @@
 
  }
   .box6a{width: 100%;
-    height: 50px;
+    height: auto;
     color: black;
     background-color: #f3569d;
     
@@ -245,7 +250,7 @@
     background-color:#e3cbcb ;
  }
   .box7a{width: 100%;
-    height: 50px;
+    height: auto;
     color: black;
     background-color: #f3569d;
     
@@ -282,7 +287,7 @@
     background-color:#e3cbcb ;
 }
 .box8a{width: 100%;
-    height: 50px;
+    height: auto;
     color: black;
     background-color: #f3569d;
     
@@ -304,7 +309,7 @@
     background-color:#e3cbcb ;
 }
 .box9a{width: 100%;
-    height: 50px;
+    height: auto;
     color: black;
     background-color: #f3569d;
     
@@ -335,7 +340,7 @@
  }
 
 #button2{
-    width: 10%;
+    width: 15%;
     height: 50px;
     border: 2px solid #e3cbcb;
     background-color:  #f14391;;
@@ -359,25 +364,25 @@
 
 }
  .boxa{
-    width: 30%;
-    height: 40vh;
+    width: 50%;
+    height: 50vh;
     border: 2px solid pink;
     margin-left: 3%;
 }
 .boxb{
-    width: 30%;
-    height: 40vh;
+    width: 50%;
+    height: 50vh;
     border: 2px solid pink;
     margin-left: 3%;
 }
 .boxc{
-    width: 30%;
-    height: 40vh;
+    width: 50%;
+    height: 50vh;
     border: 2px solid pink;
     margin-left: 3%;
 }
 #button3{
-    width: 10%;
+    width: 15%;
     height: 50px;
     border: 2px solid #e3cbcb;
     background-color:  #f14391;;
@@ -411,15 +416,16 @@
     background:black;
     color: white;
     padding: 40px 0;
-    font-size: 20px;
+    font-size: 15px;
 }
 .footer-container{
     width: 80%;
     display: flex;
     justify-content:space-evenly;
     flex-wrap: wrap;
-    gap: 70px;
+    gap: 20px;
     margin-left: 12%;
+    height: auto;
 }
 .box12 h3{
     margin-bottom: 25px;
@@ -433,3 +439,40 @@
 @media(max-width:430px){
 
 }
+ @media(max-width:430px){
+
+#navbar button{
+    display: none;
+}
+#navbar nav ul{
+    display: none;
+}
+#navbar div{
+    display: none;
+}
+#navbarbutton{
+    display: none;
+}
+* #check:checked~#nav ul li a { 
+ display: block;
+    position: absolute;
+    background-color: bisque;
+    top: 100px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    line-height: 35px;
+    z-index: 100;
+}
+#bar{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    z-index: 10;
+    display: none;
+} 
+#check{
+    display: none;
+}
+ }
